@@ -1,0 +1,85 @@
+set nocompatible              " be iMproved, required
+filetype on                   " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'kien/ctrlp.vim.git'
+Plugin 'bling/vim-airline.git'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+filetype plugin on
+
+" Setup CTRLP
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+
+
+
+" Set auto smart tabbing 
+set smarttab
+
+" Indents will have a width of 4
+set shiftwidth=4 
+
+" The width of a TAB is set to 4.
+set tabstop=4
+
+" Expand TABs to spaces
+set expandtab 
+
+" Set line numbering
+set number
+
+" Make the mouse usable in Vim (in all modes)
+set mouse=a
+
+" Highlight while typing search pattern
+set incsearch
+
+" Highlighting search
+set hlsearch
+
+" Smart ident safter linebreak
+set smartindent
+
+" Show the column an row number of the ruler
+set ruler
+
+" Activate syntax-highlighting
+syntax enable
+
+" Mappings
+inoremap jk <Esc>
+
+" Highlights the current cursor line
+set cursorline
+
+" change color scheme specific for mac and iterm2
+set t_Co=256
+" change color scheme
+colorscheme  xoria256
+
+" background: Is a "light" or "dark" background used?
+set background=dark
+
+" customize the status line
+set statusline=Buffer[%n]\ File:%F%=ASCII-Value:hex(0x%02B),dez(%03b)\ Position:\ %l,%-4c\ --%P--
+
+" Activate command line completion
+set wildmenu 
+
+
+"=========================================
+" Abreviations
+"=========================================
+
+" Important constants
+iab Api 3.1415926535897932384626433832795028841972
+iab Ae 2.7182818284590452353602874713526624977573
