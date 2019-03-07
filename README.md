@@ -2,3 +2,5 @@
 
 * vimrc
 * gitconfig
+* custom agnoster theme oh-my-zsh
+
